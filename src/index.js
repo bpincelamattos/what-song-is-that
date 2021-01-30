@@ -5,6 +5,9 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+//import store from './containers/defaults';
+//import { setPlayer }  from './containers/actions';
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
