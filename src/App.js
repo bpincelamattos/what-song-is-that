@@ -1,17 +1,12 @@
 //import logo from './logo.svg';
 import './App.css';
-import Main from './components/Main';
-
-import { Provider } from 'react-redux';
-import { store } from './containers/defaults';
+import Main from './containers/NameContainer';
 
 function App() {
   return (
-    <Provider store={store}>
       <div className="App">
         <Main />
       </div>
-    </Provider>
   );
 }
 

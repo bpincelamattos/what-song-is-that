@@ -13,7 +13,7 @@ import {
         case SET_PLAYER:
             return {
                 ...state,
-                player: action.payload.player
+                player: action.playerName
             }
         // case NEXT_SONG:
         //     return {

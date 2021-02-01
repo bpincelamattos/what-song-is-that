@@ -2,11 +2,7 @@ import React, {useState} from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
-
-
 // import Nameform from './Nameoutput';
-
-//import Register from './Register';
 
 export default function Main (props) {
     
@@ -15,20 +11,23 @@ export default function Main (props) {
     const handleShow = () => setShow(true); //showModal
 
     const [name, setName] = useState('');
-    const handleAddName = () => {
-        console.log('in handleaddname function')
-        props.handleClick(name);
+
+    const handleNameClick = () => {
+        console.log('in handleNameClick function')
+        props.onAdd(name);
+        handleClose();
     }
 
-    const handleNameChange = (e) => {
-        let playerName = (e.target.value);
-        setName(playerName);
-        console.log(playerName)
+    const handleNameChange = (event) => {
+        let name = (event.target.value);
+        setName(name);
+        console.log(name)
     }
    
     return (
         <>
             <h1>Main Page</h1>
+            <h1>Welcome : {props.player}</h1>
             <Button variant="primary" onClick={handleShow}>
                 Start Game
             </Button>
@@ -41,7 +40,7 @@ export default function Main (props) {
                     <input type="text" onChange={handleNameChange} />
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button onClick={handleAddName}>Start!</Button>
+                    <Button onClick={handleNameClick}>Start!</Button>
                     <Button variant="secondary" onClick={handleClose}>
                         Close
                     </Button>
