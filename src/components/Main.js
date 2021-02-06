@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+import './main.css'
 
 // import Nameform from './Nameoutput';
 
@@ -13,7 +14,6 @@ export default function Main (props) {
     const [name, setName] = useState('');
 
     const handleNameClick = () => {
-        console.log('in handleNameClick function')
         props.onAdd(name);
         handleClose();
     }
@@ -26,10 +26,10 @@ export default function Main (props) {
    
     return (
         <>
-            <h1>Main Page</h1>
-            <h1>Welcome : {props.player}</h1>
-            <Button variant="primary" onClick={handleShow}>
-                Start Game
+            <h1>What Song is That?</h1>
+            <h1>Welcome, {props.player ? props.player : "Friend"}</h1>
+            <Button className="button-modal" variant="primary" onClick={handleShow}>
+                Who Are You?
             </Button>
             <Modal show={show} onHide={handleClose} animation={false}>
                 <Modal.Header closeButton>

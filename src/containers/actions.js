@@ -1,6 +1,6 @@
 // Document Action Types
 export const SET_PLAYER = 'SET_PLAYER';
-export const NEXT_SONG = 'NEXT_SONG';
+export const SET_CURRENT_SONG = 'SET_CURRENT_SONG';
 export const INCREMENT_POINT = 'INCREMENT_POINT';
 export const ADD_SONG = 'ADD_SONG';
 
@@ -13,12 +13,15 @@ export function setPlayer(name) {
     };
   }
 
-// export function nextSong(song) {
-//     return {
-//         type: NEXT_SONG,
-//         payload: song
-//     };
-// }
+export function currentSong(song) {
+    return {
+        type: SET_CURRENT_SONG,
+        payload: {
+          song
+        }
+
+    };
+}
 
 // export function incrementPoint(points) {
 //     return {

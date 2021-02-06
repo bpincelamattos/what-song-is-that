@@ -2,7 +2,7 @@
 import defaultState from "./defaults";
 import { 
     SET_PLAYER,
-    // NEXT_SONG,
+    SET_CURRENT_SONG,
     // INCREMENT_POINT,
     // ADD_SONG
  } from "./actions";
@@ -15,11 +15,11 @@ import {
                 ...state,
                 player: action.playerName
             }
-        // case NEXT_SONG:
-        //     return {
-        //         ...state.player,
-        //         song: action.payload.song
-        //     }
+        case SET_CURRENT_SONG:
+            return {
+                ...state,
+                song: action.song_playing
+            }
         // case INCREMENT_POINT:
         //     return {
         //     points: action.payload.points + 1

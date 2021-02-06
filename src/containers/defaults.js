@@ -3,7 +3,7 @@ import { quizReducer } from './reducer'
 
 const defaultState = {
     player: '',
-    // song: '',
+    song: {},
     // points: 0,
     // playlist: []
 }

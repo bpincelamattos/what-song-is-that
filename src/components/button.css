@@ -1,0 +1,11 @@
+.button-class{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: auto;
+    width: 50%;
+}
+
+button{
+    padding: 10px;
+}
