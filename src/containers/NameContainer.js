@@ -2,7 +2,7 @@ import Main from '../components/Main';
 import { connect } from 'react-redux';
 
 const mapStateToProps = (state) => {
-    console.log("inside mapStateToProps")
+    console.log("inside mapStateToProps NameContainer")
     return {
         player: state.player //passing to react props the name state from redux
     }
