@@ -1,7 +1,6 @@
 import React, {useEffect, useState } from 'react';
 import './button.css'
 import './answerOption.css'
-import { answerOptions } from '../containers/actions';
 
 export default function AnswerOptions (props) {
     
