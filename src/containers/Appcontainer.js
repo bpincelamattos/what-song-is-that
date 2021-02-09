@@ -7,5 +7,4 @@ const mapStateToProps = (state) => {
         player: state.player //passing to react props the name state from redux
     }
 }
-
 export default connect(mapStateToProps)(App)

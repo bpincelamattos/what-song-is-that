@@ -14,6 +14,5 @@ const mapDispatchToProps = (dispatch) => {
         onIncrementSongCounter: () => { dispatch ({ type: "INCREMENT_SONG_COUNTER"})},
         onSetPlaylist: (song) => {dispatch({type: "ADD_SONG", song_played: song })}
     }
-
 }
 export default connect(mapStateToProps, mapDispatchToProps)(AnswerOptions)

@@ -29,23 +29,22 @@ export default function Quiz (props) {
 
           let arraySong = [];
           arraySong.push(track)
-          console.log(arraySong);
           setCurrentSong(arraySong);
         },
       )
   }
 
   props.onSetSong(currentSong);  
-  console.log(props.songCounter)
+
   return (
     <Container className="container">
       <Row>
         <Col>
         <img className="gif" alt="person listening to music" src="https://media.giphy.com/media/eMh8Os1QtL3zZM6ECN/giphy.gif"></img>        
-        <audio src={currentSong ? currentSong[0].source : ""} controls="controls" autoPlay /> 
+        <audio id="player" src={currentSong ? currentSong[0].source : ""} controls="controls" autoPlay /> 
         </Col>
         { props.songCounter === 8 ? <Results /> :<Col> <AnswerOptions fetchSong={_fetchSong} /></Col> }
       </Row>
     </Container>
   );
-  }
+}

@@ -3,16 +3,13 @@ import Quiz from './containers/SongContainer';
 import Main from './containers/NameContainer';
 import Header from './components/Header';
 
+function App() {
 
-function App(props) {
-
-  console.log(props.player)
   return (
     <>
       <Header />
       <Main />
       <Quiz />
-      {/* { props.player ? <Quiz />  : <div>Lets Start?</div> } */}
     </>
   );
 }

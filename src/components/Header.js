@@ -9,7 +9,7 @@ export default function Header (props) {
         <div className="container">  
             <Image className="header" src={header}></Image>
             <Image className="logo" src={logo}></Image>
-            <div className='text'>How tuned are you in the most played tracks right now?</div>
+            <div className='text'>How in tune are you with the most played tracks right now?</div>
         </div>
     )
 }

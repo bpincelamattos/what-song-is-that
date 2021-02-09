@@ -7,7 +7,6 @@ const mapStateToProps = (state) => {
     }
 }
 
-
 const mapDispatchToProps = (dispatch) => {
     return {
         onAdd: (name) => dispatch({type: "SET_PLAYER", playerName: name})

@@ -8,7 +8,6 @@ const mapStateToProps = (state) => {
     }
 }
 
-
 const mapDispatchToProps = (dispatch) => {
     return {
         onSetSong: (song) => {dispatch({type: "SET_CURRENT_SONG", song_playing: song})},
