@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+.button-modal{
+    display: flex;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.text-main{
+    font-family: 'Permanent Marker', cursive;
+}
+
+.container{
+    text-align: center;  
+}

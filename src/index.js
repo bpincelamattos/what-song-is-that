@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import { store } from './containers/defaults';  //importing "store" with all my global states
+import { store } from './store/defaults';  //importing "store" with all my global states
 import { Provider } from 'react-redux'; //importing Provider so I can provide my store to all components
 
 ReactDOM.render(

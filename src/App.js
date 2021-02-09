@@ -1,17 +1,18 @@
-//import logo from './logo.svg';
 import './App.css';
 import Quiz from './containers/SongContainer';
 import Main from './containers/NameContainer';
-import AnswerOptions from './containers/AnswerContainer';
-//import {  BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Header from './components/Header';
 
 
-function App() {
+function App(props) {
+
+  console.log(props.player)
   return (
     <>
+      <Header />
       <Main />
       <Quiz />
-      <AnswerOptions/>
+      {/* { props.player ? <Quiz />  : <div>Lets Start?</div> } */}
     </>
   );
 }

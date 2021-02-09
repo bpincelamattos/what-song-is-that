@@ -1,17 +1,13 @@
 import { createStore } from 'redux';
-import { quizReducer } from './reducer'
+import { quizReducer } from '../reducers/reducer'
 
 const defaultState = {
     player: '',
     song: {},
-    // points: 0,
-    // playlist: []
+    points: 0,
+    songCounter: 1,
+    playlist: []
 }
-
-// const reducer = combineReducers({
-//     form: reduxFormReducer, // mounted under "form"
-//     //quizReducer: quizReducer
-//   });
 
 export const store = createStore(quizReducer, defaultState);
 

@@ -2,6 +2,7 @@
 export const SET_PLAYER = 'SET_PLAYER';
 export const SET_CURRENT_SONG = 'SET_CURRENT_SONG';
 export const INCREMENT_POINT = 'INCREMENT_POINT';
+export const INCREMENT_SONG_COUNTER = "INCREMENT_SONG_COUNTER";
 export const ADD_SONG = 'ADD_SONG';
 
 export function setPlayer(name) {
@@ -19,20 +20,24 @@ export function currentSong(song) {
         payload: {
           song
         }
-
     };
 }
 
-// export function incrementPoint(points) {
-//     return {
-//         type: INCREMENT_POINT,
-//         payload: points
-//     }
-// }
+export function incrementPoint() {
+    return {
+        type: INCREMENT_POINT
+    }
+}
 
-// export function addSong (song) {
-//     return{
-//         type: ADD_SONG,
-//         payload: song
-//     }
-// }
+export function incrementSongCounter() {
+  return {
+      type: INCREMENT_SONG_COUNTER
+  }
+}
+
+export function addSong (song) {
+    return{
+        type: ADD_SONG,
+        payload: song
+    }
+}

@@ -2,7 +2,6 @@ import Main from '../components/Main';
 import { connect } from 'react-redux';
 
 const mapStateToProps = (state) => {
-    console.log("inside mapStateToProps NameContainer")
     return {
         player: state.player //passing to react props the name state from redux
     }
@@ -11,7 +10,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        onAdd: (name) => dispatch(dispatch({type: "SET_PLAYER", playerName: name}))
+        onAdd: (name) => dispatch({type: "SET_PLAYER", playerName: name})
     }
 }
 export default connect(mapStateToProps, mapDispatchToProps)(Main)
