@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400&display=swap');
+
+audio {
+    filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(100%);
+}
+.gif{
+    width: 350px;
+    height: 350px;
+}
+
+.gif-result{
+    width: 350px;
+    height: 150px;
+}
+
+.text-bad-result{
+    color:red ;
+}
+.text-average-result{
+    color:blue ;
+}
+.text-good-result{
+    color:green ;
+}
+
+.font{
+    font-family: 'Permanent Marker', cursive;
+}
+
+.result-container{
+    margin-bottom: 45px;
+    margin-top: 70px;
+}
+
+.start-again-button{
+    margin-bottom: 60px;
+}
+
+.icon {
+    color: #09015f;
+}
+
+.list-text{
+    font-family: 'Kalam', cursive;
+    font-size:30px
+}

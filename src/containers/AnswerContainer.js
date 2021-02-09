@@ -2,9 +2,18 @@ import AnswerOptions from '../components/AnswerOptions';
 import { connect } from 'react-redux';
 
 const mapStateToProps = (state) => {
-    console.log("inside mapStateToProps AnswerContainer", state)
     return {
-        song: state.song //passing to react props the name state from redux
+        song: state.song, //passing to react props the name state from redux store
+        songCounter: state.songCounter
     }
 }
-export default connect(mapStateToProps)(AnswerOptions)
+
+const mapDispatchToProps = (dispatch) => {
+    return{
+        onIncrement: () =>{ dispatch({type: 'INCREMENT_POINT'}) },
+        onIncrementSongCounter: () => { dispatch ({ type: "INCREMENT_SONG_COUNTER"})},
+        onSetPlaylist: (song) => {dispatch({type: "ADD_SONG", song_played: song })}
+    }
+
+}
+export default connect(mapStateToProps, mapDispatchToProps)(AnswerOptions)

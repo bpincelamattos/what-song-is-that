@@ -1,9 +1,7 @@
 import React, {useState} from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import './main.css'
-
-// import Nameform from './Nameoutput';
+import './Css/main.css'
 
 export default function Main (props) {
     
@@ -25,28 +23,26 @@ export default function Main (props) {
     }
    
     return (
-        <>
-            <h1>What Song is That?</h1>
-            <h1>Welcome, {props.player ? props.player : "Friend"}</h1>
-            <Button className="button-modal" variant="primary" onClick={handleShow}>
+        <div className="container">
+            <h1 className="text-main">Welcome, {props.player ? props.player : "Friend"}</h1>
+            <Button className="button-modal"  variant="warning" onClick={handleShow}>
                 Who Are You?
             </Button>
             <Modal show={show} onHide={handleClose} animation={false}>
                 <Modal.Header closeButton>
-                 <Modal.Title>Lets Start?</Modal.Title>
+                 <Modal.Title className="text-main">Lets Start?</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <label >Player Name </label>
+                    <label className="text-main">Player Name :</label>
                     <input type="text" onChange={handleNameChange} />
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button onClick={handleNameClick}>Start!</Button>
-                    <Button variant="secondary" onClick={handleClose}>
+                    <Button variant="outline-primary" onClick={handleNameClick}>Start!</Button>
+                    <Button variant="outline-secondary" onClick={handleClose}>
                         Close
                     </Button>
                 </Modal.Footer>
             </Modal>
-          
-        </>
+        </ div>
     )   
 }

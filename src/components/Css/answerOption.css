@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+h4{
+  font-family: 'Permanent Marker', cursive;
+}
+.button{
+    border-radius: 4px;
+    background-color: white;
+    color: black;
+    border: 2px solid black ;
+    transition-duration: 0.4s;
+    cursor: pointer; 
+    text-decoration: none;
+}
+
+.correct-answer{
+    background-color: #4CAF50; 
+    color: white; 
+    margin-bottom: 10px;
+}
+
+
+
+  .wrong-answer {
+    background-color: #f85a4f; 
+    color: white;
+    margin-bottom: 10px; 
+  }
+  
+
