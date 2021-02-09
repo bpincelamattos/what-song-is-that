@@ -3,7 +3,6 @@ import Button from 'react-bootstrap/Button'
 import './Css/button.css'
 import './Css/answerOption.css'
 
-
 export default function AnswerOptions (props) {
     
   const [options, setOptions] = useState([]);
@@ -70,7 +69,6 @@ export default function AnswerOptions (props) {
   }  
 
   const _increment = () => {
-    console.log(props.songCounter)
     if(props.songCounter <= 8 ){
       props.onIncrementSongCounter(); 
     }
@@ -107,9 +105,7 @@ export default function AnswerOptions (props) {
       }}>Next</Button>
       <Button id="results" style={{display: "none"}}>Results</Button>
       </div>
-
-    </div>   
-    :
+    </div>       :
     <div></div>
   );
-  }
+}

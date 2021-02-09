@@ -1,4 +1,3 @@
-//import { combineReducers } from 'redux';
 import defaultState from "../store/defaults";
 import { 
     SET_PLAYER,
@@ -7,7 +6,6 @@ import {
     INCREMENT_SONG_COUNTER,
     ADD_SONG
  } from "../actions/actions";
-
 
  export function quizReducer (state=defaultState, action) {
      switch(action.type){

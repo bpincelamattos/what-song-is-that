@@ -3,7 +3,7 @@ import Results from "../components/Results";
 
 const mapStateToProps = (state) => {
     return {
-        points: state.points //passing to react props the name state from redux
+        points: state.points, //passing to react props the name state from redux
     }
 }
 
